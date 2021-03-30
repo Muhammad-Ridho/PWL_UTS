@@ -2,10 +2,12 @@
 @section('content')
 <div class="row justify-content-center">
     <div class="col-sm-10">
-        <h2>Data Barang</h2>
+        <h2>DATA BARANG</h2>
     </div>
 
 </div>
+
+
 
 <div class="row justify-content-end">
     <div class="col-md-4">
@@ -17,6 +19,12 @@
                 </span>
             </div>
         </form>
+    </div>
+</div>
+
+<div class="row justify-content-end">
+    <div class="col-md-15">
+        <a class="btn btn-success" href="{{ route('barang.create') }}"> Input Barang</a>
     </div>
 </div>
 
@@ -61,9 +69,4 @@
 
 {{ $barang->links('barang.layouts.pagination') }}
 
-<div class="row justify-content-end">
-    <div class="col-md-2">
-        <a class="btn btn-success" href="{{ route('barang.create') }}"> Input Barang</a>
-    </div>
-</div>
 @endsection
