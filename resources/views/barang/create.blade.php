@@ -37,8 +37,7 @@
                             <option value="minuman">minuman</option>
                             <option value="kebutuhan">kebutuhan</option>
                             <option value="peralatan mandi">peralatan mandi</option>
-                            <option value="elektronik">elektronik</option>
-                            <option value="elektronik">makanan</option>
+                            <option value="elektronik">elektronik</option>>
                         </select>
                     </div>
                     <div class="form-group">
