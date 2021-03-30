@@ -1,5 +1,6 @@
 <?php
 
+use App\Model\Barang;
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
