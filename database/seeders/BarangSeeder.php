@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
 
-class PostSeeder extends Seeder
+class BarangSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,6 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-
         $barang = array(
             array('BR001', 'Piring', 'kebutuhan', 3000, 100),
             array('BR002', 'Buku', 'atk', 15000, 50),
@@ -37,15 +36,15 @@ class PostSeeder extends Seeder
             array('BR019', 'HVS', 'atk', 3000, 100),
             array('BR020', 'tas', 'kebutuhan', 3000, 100)
         );
-          
-            for($i = 0; $i < 20; $i++){
-                DB::table('barang')->insert([
-                    'kode_barang' => $barang[$i][0],
-                    'nama_barang' => $barang[$i][1],
-                    'kategori_barang' => $barang[$i][2],
-                    'harga' => $barang[$i][3],
-                    'qty' => $barang[$i][4]
-                ]);
-            }
+
+        for($i = 0; $i < 20; $i++){
+            DB::table('barangs')->insert([
+                'kode_barang'       => $barang[$i][0],
+                'nama_barang'       => $barang[$i][1],
+                'kategori_barang'   => $barang[$i][2],
+                'harga'             => $barang[$i][3],
+                'qty'               => $barang[$i][4]
+            ]);
+        }
     }
 }
