@@ -40,6 +40,7 @@
                             <option value="kebutuhan">kebutuhan</option>
                             <option value="peralatan mandi">peralatan mandi</option>
                             <option value="elektronik">elektronik</option>
+                            <option value="makanan">elektronik</option>
 
                         </select>
                     </div>
